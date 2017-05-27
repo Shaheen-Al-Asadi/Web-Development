@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<head>
+    <title>Quiz 2</title>
+
+    <style>
+        .container{
+        width:80%;
+        margin:auto;
+        background-color:#FFCC33;
+        color:blue;
+        text-align:center;
+	padding-left: 30px;
+        }
+        h2{
+            color:red;
+        }
+        p{
+        display:inline;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Medical Information</h2>
+        <form method="post" name="form1" action="http://formpost.azurewebsites.net/home/test">
+
+            <p style="color:red">*</p><p>Name: <input type="text" name="name" maxlength="30" required placeholder="Last Name, First Name"><br><br>
+
+            Gender:
+            <input type="radio"  name="gender"   value="female" id="female" />
+            <label for="female">Female</label>
+            <input type="radio"  name="gender"   value="male" id="male" />
+            <label for="male">Male</label><br><br>
+
+            Age:
+            <input type="number" name="age" min="0" max="200"/><br><br>
+
+            Province:
+            <select name="province" size="1" title="Enter your province">
+                <option value="ON">Ontario</option>
+                <option value="QC">Quebec</option>
+                <option value="BC">British Columbia</option>
+            </select><br><br>
+
+            Symptom:
+            <input type="checkbox" name="symptom" value="fever"> Fever
+            <input type="checkbox" name="symptom" value="cough"> Cough
+            <input type="checkbox" name="symptom" value="rash"> Rash
+            <br><br>
+
+            Other Symptoms:<br>
+            <textarea name="othersymptoms" cols="40" rows="10"></textarea><br><br>
+
+            Email:
+            <input type="email" name="email"><br><br>
+
+            <input type="submit" value="Submit your form"/> &nbsp
+            <input type="reset" value="Reset your form" />
+
+            <br><br>
+            </p>
+        </form>
+    </div>
+</body>
+
