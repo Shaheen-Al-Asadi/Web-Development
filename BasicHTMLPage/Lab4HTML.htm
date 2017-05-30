@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8" />
+    <title>Shaheen's Lab4</title>
+    <link rel="stylesheet" href="Lab4.css" type="text/css"/> <!--External Style Sheet-->
+    <style>
+        h2 {
+            color:#9CFF00;
+            font-family:Monospace;
+        } <!-- internal style sheet -->
+
+        #center{
+            margin-left: auto;
+            margin-right: auto;
+            width: 235px;
+        }
+        #picture{
+                margin-left:auto;
+                margin-right: auto;
+                width: 235px;
+        }
+    </style>
+    </head>
+    <body>
+        <script>
+            var dt=new Date(document.lastModified);
+            document.write("<mark> This page was last modified on " +
+                                dt.toLocaleString() + "</mark>");
+        </script>
+        <h2>Welcome to Shaheen's Webpage!</h2>
+        <p>My name is Shaheen and I am a student studying at <i><b> Seneca College @ York </b></i></p>
+        <p>Studying can be <i>"Fun"</i> but it can also be <b><i><u>"Hard"</u></i></b></p>
+        <a href="#bottom" style="text-align:center;display:block;"><!--This is inline style -->Click here to reach bottom of the page</a>
+        <a href="../../index.htm" style="text-align:center;display:block;"><b>...or Click Here to return to the Homepage</b></a>
+
+        <h4>Top Reasons to Learn HTML:</h4>
+        <ul>
+            <li>You can make webpages</li>
+            <li>You can create content</li>
+            <li>You can develop an online presence</li>
+            <li>Best of all its <b>Fun!</b></li>
+        </ul>
+
+        <h4> My Top 5 Favorite Cars are:</h4>
+        <ol>
+            <li>Mercedes 190E 2.6 EVO</li>
+            <li>Mazda RX7</li>
+            <li>Nissan Skyline R32</li>
+            <li>Lamborghini Countach</li>
+            <li>Acura NSX</li>
+        </ol>
+
+        <!-- Improvised table here -->
+        <table border="1">
+            <caption><h3 style="color:#9CFF00;text-align:center;font-family:Monospace;">Improvised Table</h3> <!--This is inline style --> </caption>
+            <thead>
+                <tr>
+                    <th>Customer</th>
+                    <th>Item</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                   <td >Jimmy</td>
+                   <td>Ipod</td>
+                   <td>$299</td>
+                </tr>
+
+                <tr>
+                    <td >Chris</td>
+                    <td>Laptop</td>
+                    <td>$499</td>
+                </tr>
+
+                <tr>
+                    <td>David</td>
+                    <td>Camera</td>
+                    <td>$199</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p>Click<a href='http://www.google.ca'> Here </a>To visit the Regular Google.ca Website</p>
+        <p>Click The Google logo below to go to Google.ca Dark Edition, It saves Energy !</p>
+        <br>
+        <div id ="center"><a href='http://www.blackle.com/'style="text-align:center;display:block;"target="xyz"> <img src='http://www.uswebsitecreations.com/blog_includes/images/animated_logos/google_plus_animated_logo_2_dark_small.gif' alt="Google Black" title="Google Black"/></a></div>
+        <p>Here is an Image of my favorite car, The Mercedes 190E <br>
+        <div style="text-align:center;"><img src='http://up.autotitre.com/0bd0f07564.jpg' alt="190E Evo" title="190E Evo"/></div>
+	<p> Thanks to Autotitre.com for the image. </p>
+        <p> If you would like to contact Shaheen Al-Asadi:
+        <a href='mailto:sal-asadi@myseneca.ca'> please e-mail me.</a></p>
+        <a id="bottom"></a>
+    </body>
+    <footer>
+        <h4>Designed by:Shaheen Al-Asadi</h4>
+        <h4>Message me: <a href="mailto:shaheen_al-asadi@hotmail.com">here</a>.</h4>
+    </footer>
+</html>

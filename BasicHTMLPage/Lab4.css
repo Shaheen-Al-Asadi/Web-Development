@@ -1,0 +1,93 @@
+/* Main header font */
+h4{
+    color:#9CFF00;
+    font-family:Monospace;
+    text-align:center;
+}
+
+/* background image, border */
+body{
+    background-color:#B6C0D2;
+    background-image:url(darkemb.png);
+    background-repeat:repeat;
+    border: 10px solid #8AC007;
+    padding:10px;
+    margin:10px;
+}
+
+/* Contact message fixed to bottom */
+footer{
+    background-color:black;
+    position:fixed;
+    bottom:0;
+    right:0;
+    width: 280px;
+    border: 3px solid #8AC007;
+}
+
+/* table styling */
+table{
+    padding:5px;
+    border:solid #9CFF00;
+    margin-left: auto;
+    margin-right: auto;
+    width: 235px;
+}
+
+th{
+    color:#9CFF00;
+    padding:5px;
+    border: 2px inset #9CFF00;
+    background-color: grey;
+}
+
+td{
+    color:#9CFF00;
+    padding:5px;
+    border: 2px inset #9CFF00;
+    background-color: grey;
+}
+
+/* paragraph styling */
+p{
+    background-color: grey;
+    color:white;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 14px;
+    text-align:center;
+    margin:7px;
+    padding:7px;
+    border:3px dashed #8AC007;
+}
+
+/* list item styling */
+li{
+    color:#B6C0D2;
+    list-style-image: url('star.png');
+    text-align:center;
+
+}
+
+/*unvisited link*/
+a:link{
+    color:#9CFF00;
+}
+
+/*visited link*/
+a:visited{
+    color:orange;
+
+}
+
+/*hover link*/
+a:hover {
+    color:white;
+    text-decoration:none;
+    background-color:transparent;
+}
+
+/*active link*/
+a:active {
+    color:purple;
+    text-decoration: none;
+}
