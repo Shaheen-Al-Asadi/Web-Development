@@ -1,0 +1,63 @@
+div.formcontainer{
+    width:80%;
+    margin:auto;
+    padding:10px;
+}
+
+div.container{
+    border-style:ridge;
+    border-color:white;
+    width:80%;
+    margin:auto;
+    padding:10px;
+}
+
+label{
+    display: inline-block;
+    width: 250px;
+    text-align: right;
+}
+
+label.exclude{
+    display:inline;
+    text-align:left;
+}
+
+input{
+    box-shadow: 2px 2px 3px #888888;
+}
+
+select{
+    box-shadow: 2px 2px 3px #888888;
+}
+
+fieldset{
+    width:25%;
+    box-shadow: 3px 3px 4px #888888;
+}
+
+Button{
+    background-color:#d0451b;
+    border-radius:6px;
+    border:2px solid #a12727;
+    display:inline-block;
+    color:#ffffff;
+    padding:6px 24px;
+    box-shadow: 3px 3px 4px #888888;
+}
+
+html{
+    font-family: Arial;
+}
+
+div.header{
+    background-color:red;
+    color:white;
+    box-shadow: 7px 7px 1px #888888;
+}
+
+input:focus {
+    outline:none;
+    border-color:red;
+    box-shadow:0 0 4px red;
+}

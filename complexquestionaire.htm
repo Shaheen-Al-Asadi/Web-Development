@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>Sign Up</title>
+
+        <link rel="stylesheet" href="a3.css" type="text/css"/> <!-- External Style Sheet -->
+        <script type="text/javascript" src="a3.js"></script>
+        <script type="text/javascript" src="a3-countries.js"></script>
+
+    </head>
+
+    <body>
+    <div class = "container">
+
+        <div class= "header">&nbsp;
+        <h1>&nbsp; Senada<span style=color:white;font-size:60%;>&#174; INC.</span></h1>
+        </div>
+
+        <h2>Create your Senada Account</h2>
+
+        <p>Your Senada Account gives you access to a variety of online services, applications and communities. You may choose
+            to sign up for subscriptions when you create your account.</p>
+
+        <p><span style="color:red">* Required Information</span></p>
+
+        <div class = "formcontainer">
+
+        <form method="post" name="form1" id="userprofile" action=http://formpost.azurewebsites.net/home/test autocomplete="on"
+              onsubmit="return validateAll()">
+
+            <label for="emailid">Email <span style="color:red"> * </span></label> <input type = "email" name = "email" id="emailid" size="40" autofocus required />
+            Your e-mail address is your username.<br><br>
+
+            <label for="passwordid" >Password <span style="color:red"> * </span></label> <input type="password" name="password" id="passwordid" size="40" required /><br><br>
+
+            <label for="password2id" >Retype Password <span style="color:red"> * </span></label> <input type="password" name="password2" id="password2id" size="40" required /><br><br><br>
+
+            <label>Country <span style="color:red"> * </span></label>
+            <select style="width:202px" id="countryid" size="1" name="country" onchange="addcountry();">
+                <option value="SelectOne"> -Select- </option>
+                <option value="CA" selected> Canada </option>
+                <option value="US" > America </option>
+                <option value="Error" >Unable to Write "a3-countries.Js" However Importing Works (+_+) </option>
+            </select><br><br>
+
+            <label for="firstnameid" >Name <span style="color:red"> * </span></label> <input type="text" name="firstname" id="firstnameid" size="30" maxlength="40" placeholder="First or Given Name" />
+            <span style="color:red"> * </span> <input type="text" name="lastname" id="lastnameid" size="30" maxlength="40" placeholder="Last Name or Surname" required /> <br><br>
+
+            <label for="jobid">Job Title <span style="color:red"> * </span></label> <input type="text" name="job" id="jobid" size="40" maxlength="40" required /> <br><br>
+
+            <label for="phonenumberid">Phone Number <span style="color:red"> * </span></label> <input type="text" name="phonenumber" id="phonenumberid" size="40" maxlength="13" placeholder="(999)999-9999" required /> <br><br>
+
+            <label for="companyid">Your Company <span style="color:red"> * </span></label> <input type="text" name="company" id="companyid" size="40" maxlength="40" required /> <br><br><br>
+
+            <label for="address1id">Address <span style="color:red"> * </span></label> <input type="text" name="address1" id="address1id" size="40" maxlength="40" required /> <br><br>
+            <label></label>   <input type="text" name="address2" id="address2id" size="40" maxlength="40" /> <br><br>
+
+            <label for="cityid">City <span style="color:red"> * </span></label> <input type="text" name="city" id="cityid" size="40" maxlength="40" required /> <br><br>
+
+            <label for="noncanprovinceid">Province ( If Not Canada )<span style="color:red"> * </span></label> <input type="text" name="province" id="noncanprovinceid" size="40"/> <br><br>
+
+            <label for="canprovinceid"> Province <span style="color:red"> * </span></label>
+            <select name="canprovince" id="canprovinceid" size="1" style="width:202px">
+                <option value="none" selected> -Select- </option>
+                <option value="AB"> Alberta </option>
+                <option value="BC"> British Columbia </option>
+                <option value="MB"> Manitoba </option>
+                <option value="NB"> New Brunswick </option>
+                <option value="NL"> Newfoundland and Labrador </option>
+                <option value="NT"> Northwest Territories </option>
+                <option value="NS"> Nova Scotia </option>
+                <option value="NU"> Nunavut </option>
+                <option value="ON"> Ontario </option>
+                <option value="PS"> Prince Edward Island </option>
+                <option value="QC"> Quebec </option>
+                <option value="SK"> Saskatchewan </option>
+                <option value="YT"> Yukon </option>
+            </select><br><br>
+
+            <label for="zipcodeid">Zip/Postal Code <span style="color:red"> * </span></label> <input type="text" name="zipcode" id="zipcodeid" size="40" required /> <br><br>
+
+            <div class="centerx">
+                <fieldset>
+                <legend>How did you hear about us?</legend>
+                <input type="radio" name="referral" value="googlesearch" id="google" />
+                <label class="exclude" for ="google" > Google Search </label><br>
+                <input type="radio" name="referral" value="blogpost" id="blog" />
+                <label class="exclude" for ="blog" > Blog Post </label><br>
+                <input type="radio" name="referral" value="friend" id="friend" />
+                <label class="exclude" for ="friend" > Friend </label><br>
+                <input type="radio" name="referral" value="others" id="other" />
+                <label class="exclude" for ="other" > Others </label><br>
+                </fieldset>
+            </div><br>
+
+            <label></label><input type="checkbox" name="subscribe" value="true" id="subscriber" />
+            <label class="exclude" for="subscriber"> Yes, send me e-mails on Senada Products, Services and Events.</label><br><br>
+
+            <!-- <input type="button" value="Press This Button"
+            onclick="window.alert('Button Clicked')"/> <!- - value= text over the button, auto closing /> -->
+            <div class="centerx">
+                <button type="submit" value="Create"> Create Account </button>
+                <button type="reset" value="reset"> Reset </button>
+            </div>
+        </form> <!-- Form1 -->
+        </div> <!-- .formcontainer -->
+
+        <script>
+        var dt=new Date(document.lastModified);
+        document.write("<p style=background-color:#e6e6e6;text-align:center;> This page was last updated on " +dt.toLocaleString() + "</p>");
+        </script>
+
+    </div> <!-- .container -->
+    </body>
+
+</html>
